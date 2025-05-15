@@ -40,15 +40,15 @@ let sec;
 app.get("/", (req, res) => {
     const filePath = path.join(basePath, 'views', 'index.html');
 });
-//initalizing database
-// const db = new pg.Client({
-//     user: "postgres",
-//     host: "localhost",
-//     database: "homework",
-//     password: "yASHMEET09",
-//     port: 5432,
-//   });
-//   db.connect();
+// initalizing database
+const db = new pg.Client({
+    user: "school_website_user",
+    host: "dpg-d0ipus95pdvs739om6qg-a",
+    database: "school_website",
+    password: "j6CARr2tFBeM7OrBJREIYHNitfDDnatv",
+    port: 5432,
+  });
+  db.connect();
 
 app.get("/homework", (req, res) => {
     res.render("select_class.ejs");
