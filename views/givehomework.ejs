@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8919319784858816"
+     crossorigin="anonymous"></script>
+     <link rel="icon" type="image/png" href="New Project.png"/>
+     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+     <link rel="stylesheet" href="css/utils.css">
+     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+    <style>
+        
+      .container {
+          position: relative;
+          width: 100%;
+          height: 100%;
+      }
+
+      .myimg {
+          position: relative;
+      }
+
+      .bannerimage {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+
+      .button-container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          gap: 20px;
+      }
+
+      .button-container a {
+          display: inline-block;
+          background-color: #4CAF50;
+          color: white;
+          padding: 15px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          border-radius: 5px;
+          text-align: center;
+          transition: background-color 0.3s ease;
+      }
+
+      .button-container a:hover {
+          background-color: #45a049;
+      }
+
+      /* New Button on Top Bar */
+      .top-bar-button {
+        display: inline-block;
+          background-color: #4CAF50;
+          color: white;
+          padding: 15px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          border-radius: 5px;
+          text-align: center;
+          transition: background-color 0.3s ease;
+      }
+
+      .top-bar-button:hover {
+        background-color: #45a049;
+      }
+
+      footer {
+          background-color: #0c1321;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+      }
+
+      .footer-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .footer-section {
+          width: 30%;
+          margin: 20px;
+      }
+
+      .footer-section h3 {
+          font-size: 18px;
+          margin-bottom: 10px;
+      }
+
+      .footer-section ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      .footer-section li {
+          margin-bottom: 10px;
+      }
+
+      .footer-section a {
+          color: #fff;
+          text-decoration: none;
+      }
+
+      .footer-section a:hover {
+          color: #ccc;
+      }
+
+      .copyright {
+          font-size: 14px;
+          margin-top: 20px;
+      }
+
+      .fa {
+          font-size: 24px;
+          margin: 10px;
+          color: #fff;
+      }
+
+      .fa:hover {
+          color: #ccc;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+      <img src="img/gips logo.png" alt="Logo">
+      <i class="fa-solid fa-location-dot location"></i> 
+      <div class="address"> 
+        <p class="supAddress">Barnala Road, Main Highway, Bhadaur,</p>
+        <p class="subAddress">Distt. Barnala, Punjab, INDIA.</p>
+      </div>
+      <i class="fa-solid fa-phone phone"></i>
+      <div class="contact">
+        <p>1800 123 500 040</p>
+        <p>+91-82880-21040</p>
+      </div>
+
+       <a href="/stafflogin" class="top-bar-button">Teacher's Login</a>
+      
+      
+  </div>
+    
+  <div class="nav-bar">
+      <nav>
+          <ul>
+              <li><a href="/">HOME</a></li>
+              <li><a href="/about">ABOUT US</a></li>
+              <li><a href="/homework">HOMEWORK</a></li>
+              <li><a href="/contact">CONTACT US</a></li>
+              
+          </ul>
+      </nav>
+  </div>
+ 
+     
+        
+        
+      <style>
+        form {
+  width: 650px;
+  margin: 40px 500px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select, input[type="text"], input[type="email"], input[type="tel"] {
+  width: 90%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  padding: 10px 20px;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+textarea{
+    width: 90%;
+    height: 200px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+input[type="submit"]:hover {
+  background-color: #555;
+}
+    </style>
+    <h1 style="margin-left: 40%;">Give Homwork</h1>
+        <form action="/giveHomework" method="post">
+            <label for="class">Select Class:</label>
+            <select id="class" name="class">
+              <option value="">Select Class</option>
+              <option value="1">1st</option>
+              <option value="2">2nd</option>
+              <option value="3">3rd</option>
+              <option value="4">4th</option>
+              <option value="5">5th</option>
+              <option value="6">6th</option>
+              <option value="7">7th</option>
+              <option value="8">8th</option>
+              <option value="9">9th</option>
+              <option value="10">10th</option>
+              <option value="11">11th</option>
+              <option value="12">12th</option>
+            </select>
+            <br><br>
+            <label for="name">Section:</label>
+            <select id="section" name="section" required>
+                <option value="">Select Section</option>
+                <option value="jasmine">Jasmine</option>
+                <option value="lily">Lily</option>
+                <option value="rose">Rose</option>
+                <option value="daisy">Daisy</option>
+                </select>
+
+                <label for="homework">Homework:</label>
+                <textarea name="homework" id="homework" ></textarea>
+            <input type="submit" value="OK" style="background-color: #013636; ">
+            
+            </form>
+             
+                    </div>
+        
+   
+
+        
+        <footer>
+            <div class="footer-container">
+              <div class="footer-section">
+              <
+                <h3>QUICK LINKS</h3>
+                <ul>
+                  <li><a href="/home">HOME</a></li>
+                  <li><a href="/about">ABOUT US</a></li>
+                  
+                  <li><a href="/homework">HOMEWORK</a></li>
+                  <li><a href="#">CLASS TESTS</a></li>
+                  <li><a href="#">ATTENDENCE</a></li>
+                  <li><a href="#">RESULT</a></li>
+                  <li><a href="#">TEACHERS</a></li>
+                  <li><a href="#">CONTACT US</a></li>
+                  
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <p>Barnala Road, Main Highway, Bhadaur, Distt. Barnala, Punjab, INDIA.</p>
+                <p>Phone: 1800 123 500 040, +91-82880-2</p>
+                <p>Email: [info@gipsbhadour.com](mailto:info@gipsbhadour.com)</p>
+              </div>
+              <div class="footer-section">
+                <h3>CONNECT WITH US</h3>
+                <ul>
+                  <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="copyright">&copy; 2023 Gobind International Public School. All rights reserved.</p>
+          </footer>
+          <style>
+            footer {
+          background-color: #0c1321;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+        }
+        
+        .footer-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+        }
+        
+        .footer-section {
+          width: 30%;
+          margin: 20px;
+        }
+        
+        .footer-section h3 {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        
+        .footer-section ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        .footer-section li {
+          margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+          color: #fff;
+          text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+          color: #ccc;
+        }
+        
+        .copyright {
+          font-size: 14px;
+          margin-top: 20px;
+        }
+        
+        .fa {
+          font-size: 24px;
+          margin: 10px;
+          color: #fff;
+        }
+        
+        .fa:hover {
+          color: #ccc;
+        }
+          </style>
+          
+            </body>
+        </head>
+        </html>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
