@@ -45,7 +45,7 @@ const db = new pg.Client({
     user: "school_website_user",
     host: "dpg-d0ipus95pdvs739om6qg-a",
     database: "school_website",
-    password: "your_password_here", // replace with actual password from Render
+    password: "j6CARr2tFBeM7OrBJREIYHNitfDDnatv", // replace with actual password from Render
     port: 5432,
     ssl: {
       rejectUnauthorized: false
