@@ -45,11 +45,16 @@ const db = new pg.Client({
     user: "school_website_user",
     host: "dpg-d0ipus95pdvs739om6qg-a",
     database: "school_website",
-    password: "j6CARr2tFBeM7OrBJREIYHNitfDDnatv",
+    password: "your_password_here", // replace with actual password from Render
     port: 5432,
+    ssl: {
+      rejectUnauthorized: false
+    }
   });
-  db.connect();
-
+  
+  db.connect()
+    .then(() => console.log("Connected to Render PostgreSQL"))
+    .catch(err => console.error("Connection error", err.stack));
 app.get("/homework", (req, res) => {
     res.render("select_class.ejs");
 });
